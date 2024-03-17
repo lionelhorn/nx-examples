@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "lint": "nx run lint --skip-nx-cache"
+  }
+}

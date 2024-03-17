@@ -16,6 +16,7 @@ import {
   initialState,
   productsReducer,
 } from '@nx-example/shared/product/state/react';
+import { SomeComponent } from '@nx-example/shared/product/ui';
 
 const StyledUl = styled.ul`
   display: flex;
@@ -92,6 +93,7 @@ export const CartCartPage = () => {
 
   return (
     <StyledUl>
+      <SomeComponent/>
       {cartState.items.map((item: CartItem) => (
         <StyledLi key={item.productId}>
           <a href={`/product/${item.productId}`}>
